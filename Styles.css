@@ -245,6 +245,7 @@
   align-items: center;
   flex-direction: column;
 }
+/* Footer*/
 .produits .newsletter {
   display: flex;
   justify-content: center;
