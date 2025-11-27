@@ -29,3 +29,81 @@
 /* ================================================
                       A propos
    ================================================ */
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================================
+                    Style Commun
+   ================================================ */
+
+/* ================================================
+                       Accueil
+   ================================================ */
+
+/* ================================================
+                      Produits
+   ================================================ */
+
+/* ================================================
+                      A propos
+   ================================================ */
+
+
+.nv_bar_about {
+   display: flex;
+   width: 100%;
+   height: 130px;
+   background-color: #e54c2a;
+   align-items: center;
+   justify-content: center;
+}
+ .boc1{
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-right: 150px;
+ }
+
+ .boc2{
+      display: flex;
+      gap: 20px;
+      color: white;
+      margin-left: 150px;
+ }
+
+ .boc3{
+      display: flex;
+      gap: 20px;
+      margin-left: 120px;
+      width: 120px;
+ }
+
+ .icon{
+      width: 30px;
+      height: 30px;
+ }
+
+.logo {
+  filter: brightness(0) invert(0.9);
+}
+
+.historique_about {
+    padding: 20px;
+   margin-left: 370px;
+}
+
+.active {
+   color: rgb(211, 88, 56);
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #e5e5e5; 
+  margin: 10px auto;
+  width: 60%;
+}
+
