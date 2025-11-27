@@ -199,7 +199,14 @@
 .produits .scroll-ligne {
   width: 3px;
   background-color: rgb(184, 184, 184);
-  border-color: rgb(184, 184, 184);
+  border: none;
+}
+.produits .scroll-progression {
+  width: 100%;
+  height: 150px;
+  background-color: #000000;
+  position: sticky;
+  top: 400px;
 }
 .produits .right-description {
   width: 82%;
