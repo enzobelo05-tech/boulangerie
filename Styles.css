@@ -2,6 +2,22 @@
                     Style Commun
    ================================================ */
 
+.gray-font {
+  color: #cecece;
+}
+.black-font {
+  color: #000000;
+}
+.green-font {
+  color: #84b535;
+}
+.white-font {
+  color: #ffffff;
+}
+.rem08-font {
+  font-size: 0.8rem;
+}
+
 /* ================================================
                        Accueil
    ================================================ */
