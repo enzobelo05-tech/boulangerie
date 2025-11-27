@@ -2,8 +2,12 @@
                     Style Commun
    ================================================ */
 
+* {
+  margin: 0;
+  padding: 0;
+}
 .gray-font {
-  color: #cecece;
+  color: #8e8e8eff;
 }
 .black-font {
   color: #000000;
@@ -16,6 +20,12 @@
 }
 .rem07-font {
   font-size: 0.7rem;
+}
+.rem12-font {
+  font-size: 1.2rem;
+}
+.bold {
+  font-weight: bold;
 }
 
 /* ================================================
