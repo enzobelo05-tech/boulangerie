@@ -47,6 +47,8 @@ body {
 }
 
 .nv_bar_about {
+  top: 0px;
+  position: sticky;
   display: flex;
   height: 90px;
   background-color: #e54c2a;
