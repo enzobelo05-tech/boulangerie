@@ -21,9 +21,11 @@
         <p class="bold rem07-font">CONTACT</p>
       </div>
       <div class="boc3">
-        <img src="../assets/playing_video.png" class="icon" />
-        <img src="../assets/playing_video.png" class="icon" />
-        <img src="../assets/bg-btn-cart-hover.png" class="icon" />
+        <img src="../assets/loupe.png" class="icon" />
+        <hr />
+        <img src="../assets/parametres.png" class="icon" />
+        <hr />
+        <img src="../assets/panier.png" class="icon" />
       </div>
     </div>
     <div class="historique_about">
@@ -86,19 +88,30 @@
           display with a Mac Pro, MacBook......
         </p>
         <div class="weight-selection">
-          <div class="case">
-            <p class="black-font rem07-font">100G</p>
+          <div class="case black-font rem07-font" onclick="selectWeight(this)">
+            100G
           </div>
-          <div class="case">
-            <p class="black-font rem07-font">200G</p>
+          <div class="case black-font rem07-font" onclick="selectWeight(this)">
+            200G
           </div>
-          <div class="case">
-            <p class="black-font rem07-font">500G</p>
+          <div class="case black-font rem07-font" onclick="selectWeight(this)">
+            500G
           </div>
-          <div class="case">
-            <p class="black-font rem07-font">1KG</p>
+          <div class="case black-font rem07-font" onclick="selectWeight(this)">
+            1KG
           </div>
         </div>
+        <script>
+          function selectWeight(element) {
+            // Retire 'selected' de tous les éléments
+            document.querySelectorAll(".case").forEach((item) => {
+              item.classList.remove("selected");
+            });
+
+            // Ajoute 'selected' à l'élément cliqué
+            element.classList.add("selected");
+          }
+        </script>
         <div class="quantity">
           <p class="black-font rem07-font">Qty:</p>
           <div class="quantity-btn">
