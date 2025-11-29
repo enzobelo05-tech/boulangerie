@@ -8,6 +8,11 @@
   </head>
   <body class="produits">
     <div class="nv_bar_about">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="boc1">
         <p class="bold rem07-font">HOME⏷</p>
         <p class="bold rem07-font">CATALOG</p>
@@ -35,6 +40,35 @@
     </div>
     <hr class="line" />
     <main>
+      <section class="produits-responsive">
+        <!-- Grande image -->
+        <div class="grande-image-container">
+          <img
+            id="mainImage"
+            src="../assets/25-800x800_00cba153-c9ff-4400-87d2-8f46290a3d41_800x800.jpg.jpeg"
+            class="grande-image"
+          />
+        </div>
+
+        <!-- Petites images -->
+        <div class="petites-images-grid">
+          <img
+            src="../assets/25-800x800_00cba153-c9ff-4400-87d2-8f46290a3d41_800x800.jpg.jpeg"
+            class="petite-thumb active"
+            onclick="changeImage(this, '../assets/25-800x800_00cba153-c9ff-4400-87d2-8f46290a3d41_800x800.jpg.jpeg')"
+          />
+          <img
+            src="../assets/20-800x800_3629c048-d25a-4c3c-9602-b9b9eccf8b6e_800x800.jpg.jpeg"
+            class="petite-thumb"
+            onclick="changeImage(this, '../assets/20-800x800_3629c048-d25a-4c3c-9602-b9b9eccf8b6e_800x800.jpg.jpeg')"
+          />
+          <img
+            src="../assets/19-800x800_6dc8ff66-200e-4ffb-84e9-88f15e2a023c_1024x1024.jpg.jpeg"
+            class="petite-thumb"
+            onclick="changeImage(this, '../assets/19-800x800_6dc8ff66-200e-4ffb-84e9-88f15e2a023c_1024x1024.jpg.jpeg')"
+          />
+        </div>
+      </section>
       <section class="img-produits">
         <img
           src="../assets/25-800x800_00cba153-c9ff-4400-87d2-8f46290a3d41_800x800.jpg.jpeg"
@@ -78,7 +112,7 @@
         </div>
         <div class="availability">
           <p class="black-font rem07-font bold">Availability:</p>
-          <p class="green-font rem07-font">In stock</p>
+          <p class="green-font rem07-font bold">In stock</p>
         </div>
         <p class="gray-font rem07-font paragraphe">
           The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
@@ -101,17 +135,6 @@
             1KG
           </div>
         </div>
-        <script>
-          function selectWeight(element) {
-            // Retire 'selected' de tous les éléments
-            document.querySelectorAll(".case").forEach((item) => {
-              item.classList.remove("selected");
-            });
-
-            // Ajoute 'selected' à l'élément cliqué
-            element.classList.add("selected");
-          }
-        </script>
         <div class="quantity">
           <p class="black-font rem07-font">Qty:</p>
           <div class="quantity-btn">
@@ -341,7 +364,7 @@
             alt="Eggs"
           />
           <p class="rem07-font bold">Zer Solola Sum</p>
-          <p class="rem12-font bold price">$80.80</p>
+          <p class="rem12-font bold price">$80.00</p>
         </article>
         <article class="article-child">
           <img
@@ -349,7 +372,7 @@
             alt="Strawberry Cake"
           />
           <p class="rem07-font bold">Konkplus Zum-In</p>
-          <p class="rem12-font bold price">$80.80</p>
+          <p class="rem12-font bold price">$80.00</p>
         </article>
         <article class="article-child">
           <img
@@ -357,7 +380,7 @@
             alt="Bread"
           />
           <p class="rem07-font bold">Zim-Ing La Joynix</p>
-          <p class="rem12-font bold price">$80.80</p>
+          <p class="rem12-font bold price">$80.00</p>
         </article>
         <article class="article-child">
           <img
@@ -365,7 +388,7 @@
             alt="Chocolate Cupcake"
           />
           <p class="rem07-font bold">Zummatough Tontamtought</p>
-          <p class="rem12-font bold price">$80.80</p>
+          <p class="rem12-font bold price">$80.00</p>
         </article>
       </div>
     </section>
@@ -376,7 +399,7 @@
           Get e-mail updates about our latest shop and special offers.
         </p>
         <div class="subscribe">
-          <p class="rem07-font gray-font email-txt">Email Address</p>
+          <input type="email" class="email-input" placeholder="Email Address" />
           <p class="bold rem07-font white-font btn-sub">Subscribe</p>
         </div>
       </div>
@@ -398,24 +421,46 @@
         </div>
         <div class="footer-nav-child">
           <p class="bold rem12-font">New Products</p>
-          <div class="products-child">
-            <img
-              src="../assets/33-800x800_29450c17-b156-4a03-b50e-f7955b9d1484_800x800.jpg.jpeg"
-              alt="Cookies"
-            />
-            <div class="products-child-text">
-              <p class="rem07-font bold">Zim-Ing La Joynix</p>
-              <p class="rem07-font price">$80.00</p>
+          <div class="products-parent">
+            <div class="products-child">
+              <img
+                src="../assets/33-800x800_29450c17-b156-4a03-b50e-f7955b9d1484_800x800.jpg.jpeg"
+                alt="Cookies"
+              />
+              <div class="products-child-text">
+                <p class="rem07-font bold">Zim-Ing La Joynix</p>
+                <p class="rem07-font price">$80.00</p>
+              </div>
             </div>
-          </div>
-          <div class="products-child">
-            <img
-              src="../assets/32-800x800_4332ed75-e7d9-4a2f-94db-db9c963afa28_800x800.jpg.jpeg"
-              alt="Soft Bread"
-            />
-            <div class="products-child-text">
-              <p class="rem07-font bold">Ovejob Treeit Goldfresh</p>
-              <p class="rem07-font price">$80.00</p>
+            <div class="products-child">
+              <img
+                src="../assets/32-800x800_4332ed75-e7d9-4a2f-94db-db9c963afa28_800x800.jpg.jpeg"
+                alt="Soft Bread"
+              />
+              <div class="products-child-text">
+                <p class="rem07-font bold">Ovejob Treeit Goldfresh</p>
+                <p class="rem07-font price">$80.00</p>
+              </div>
+            </div>
+            <div class="products-child">
+              <img
+                src="../assets/29-800x800_279a0820-e2f3-4966-9ce2-05f5b3390d0e_800x800.jpg.jpeg"
+                alt="Cream"
+              />
+              <div class="products-child-text">
+                <p class="rem07-font bold">Redphase Unitrax</p>
+                <p class="rem07-font price">$80.00</p>
+              </div>
+            </div>
+            <div class="products-child">
+              <img
+                src="../assets/26-800x800_148b8ae9-05c2-47e4-b057-f3e2f7ce6d7c_800x800.jpg.jpeg"
+                alt="Cookies"
+              />
+              <div class="products-child-text">
+                <p class="rem07-font bold">Zummatough Tontamtought</p>
+                <p class="rem07-font price">$80.00</p>
+              </div>
             </div>
           </div>
         </div>
@@ -439,5 +484,25 @@
         </p>
       </div>
     </footer>
+    <script>
+      function changeImage(element, imageSrc) {
+        document.getElementById("mainImage").src = imageSrc;
+        document.querySelectorAll(".petite-thumb").forEach((img) => {
+          img.classList.remove("active");
+        });
+        element.classList.add("active");
+      }
+    </script>
+    <script>
+      function selectWeight(element) {
+        // Retire 'selected' de tous les éléments
+        document.querySelectorAll(".case").forEach((item) => {
+          item.classList.remove("selected");
+        });
+
+        // Ajoute 'selected' à l'élément cliqué
+        element.classList.add("selected");
+      }
+    </script>
   </body>
 </html>
