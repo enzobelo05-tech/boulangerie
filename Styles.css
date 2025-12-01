@@ -971,3 +971,22 @@ header {
    gap: 15px;
    margin-left: auto;
 }
+
+@media (max-width: 780px) {
+   
+   .about .about_us{
+      padding-left: 2%;
+      padding-right: 5%;
+      width: 94%;
+   }
+}
+
+@media (max-width: 480px) {
+   .about .boc3 {
+      display: none;
+}
+
+.about .about_us{
+   width: 90%;
+}
+}
