@@ -990,3 +990,361 @@ header {
    width: 90%;
 }
 }
+/* ================================================
+                  Compte Creation
+   ================================================ */
+
+/********** Debut Header **********/
+.compteCreation .nv_bar_about {
+  top: 0px;
+  position: sticky;
+  display: flex;
+  height: 90px;
+  background-color: #e54c2a;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 17%;
+  padding-right: 17%;
+  z-index: 30;
+}
+.compteCreation .hamburger {
+  display: none;
+}
+.compteCreation .boc1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.compteCreation .boc1 p:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.compteCreation .boc2 {
+  display: flex;
+  gap: 20px;
+  color: white;
+  margin-left: 60px;
+}
+.compteCreation .boc2 p:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.compteCreation .boc3 {
+  display: flex;
+  gap: 20px;
+}
+.compteCreation .boc3 hr {
+  border-color: rgb(255, 255, 255, 0.6);
+}
+.compteCreation .boc3 img:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.compteCreation .icon {
+  width: 15px;
+  height: auto;
+}
+.compteCreation .logo {
+  filter: brightness(0) invert(0.9);
+  height: 60px;
+  width: auto;
+  margin-left: 25px;
+}
+.compteCreation .historique_about {
+  padding-left: 17%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.compteCreation .active {
+  color: rgb(211, 88, 56);
+}
+.compteCreation .line {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 10px auto;
+  width: 66%;
+}
+/*********** Fin Header **********/
+
+.compteCreation main {
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 100px;
+}
+.compteCreation main .line {
+  width: 100%;
+}
+.compteCreation .create-title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.compteCreation .creation-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.compteCreation .creation-details input {
+  width: 80%;
+  padding: 6px 8px;
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  border-radius: 3px;
+}
+.compteCreation .creation-details p {
+  display: flex;
+  justify-content: end;
+  width: 16%;
+}
+.compteCreation .main-foot-txt {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.compteCreation .main-foot-txt a {
+  text-decoration: none;
+}
+.compteCreation .create-account-btn {
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 22px;
+  padding: 6px 20px;
+  width: fit-content;
+}
+.compteCreation .create-account-btn img {
+  height: 20px;
+  width: auto;
+}
+/********** Debut Footer **********/
+.compteCreation .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  background-color: #f6f7fb;
+}
+.compteCreation .subtext {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.compteCreation .subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 25px;
+  width: 33%;
+  background-color: white;
+}
+.compteCreation p.btn-sub {
+  background-color: #e54c2a;
+  border-radius: 20px;
+  padding: 13px 35px;
+  transition: all 0.3s ease;
+}
+.compteCreation p.btn-sub:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  font-size: 0.7rem;
+  color: #8e8e8e;
+  margin: 0;
+}
+.compteCreation .kaptcha {
+  position: relative;
+  margin-left: auto;
+  bottom: 20px;
+  height: 35px;
+  width: auto;
+  background-color: white;
+  padding: 6px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.compteCreation .footer-nav {
+  padding-left: 17%;
+  padding-left: 17%;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  line-height: 1.5;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.compteCreation .line-foot {
+  margin: 40px auto;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  width: 66%;
+}
+.compteCreation .footer-nav-child {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  gap: 8px;
+}
+.compteCreation .products-child:nth-child(n + 3):nth-child(-n + 4) {
+  display: none;
+}
+.compteCreation .footer-nav-child .rem12-font {
+  margin-bottom: 8px;
+}
+.compteCreation .footer-nav-child img {
+  height: 70px;
+  width: auto;
+}
+.compteCreation .products-child {
+  display: flex;
+}
+.compteCreation .products-child-text {
+  margin-left: 10px;
+}
+.compteCreation .line2 {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+}
+.compteCreation .credit {
+  margin-right: 17%;
+  margin-left: 17%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+}
+.compteCreation .credit span {
+  color: #e54c2a;
+}
+/********** Fin Footer **********/
+@media screen and (max-width: 1160px) {
+  .compteCreation .nv_bar_about {
+    top: none;
+    position: relative;
+    display: flex;
+    height: 80px;
+    background-color: #e54c2a;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 30;
+  }
+  .compteCreation .boc1 {
+    display: none;
+  }
+  .compteCreation .boc2 {
+    display: none;
+  }
+  .compteCreation .logo {
+    margin-left: 95px;
+    height: 80px;
+    width: auto;
+  }
+  .compteCreation .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .compteCreation .hamburger span {
+    width: 25px;
+    height: 2.4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  .compteCreation .historique_about {
+    padding-left: 3%;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+  .compteCreation .line {
+    width: 94%;
+  }
+  .compteCreation .icon {
+    height: 18px;
+    width: auto;
+  }
+  .compteCreation main {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 100px;
+  }
+  .compteCreation .creation-details {
+    gap: 4px;
+  }
+  .compteCreation .creation-details input {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  .compteCreation .creation-details p {
+    justify-content: start;
+    width: 16%;
+  }
+  .compteCreation .line-foot {
+    width: 94%;
+  }
+  .compteCreation .create-account-btn {
+    padding: 9px 20px;
+  }
+  .compteCreation .article-list {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .compteCreation .article-child:nth-child(n + 3):nth-child(-n + 4) {
+    display: none;
+  }
+  .compteCreation .article-child img {
+    height: auto;
+    width: 94%;
+  }
+  .compteCreation .article-child {
+    padding: 10px;
+    margin-top: 20px;
+    border-left: rgb(224, 224, 224) 1px solid;
+    border-right: rgb(224, 224, 224) 1px solid;
+  }
+  .compteCreation .subscribe {
+    width: 66%;
+  }
+  .compteCreation .footer-nav {
+    padding-left: 3%;
+    padding-left: 3%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .compteCreation .footer-nav-child {
+    width: 100%;
+  }
+  .compteCreation .products-child:nth-child(n + 3):nth-child(-n + 4) {
+    display: flex;
+  }
+  .compteCreation .products-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .compteCreation .footer-nav-child img {
+    height: 100px;
+    width: auto;
+  }
+  .compteCreation .credit {
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+}
