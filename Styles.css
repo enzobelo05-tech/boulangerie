@@ -1348,3 +1348,94 @@ header {
     height: 150px;
   }
 }
+
+/* ================================================
+                      CATEGORIE
+   ================================================ */
+
+.category .nv_bar_about {
+  top: 0px;
+  position: sticky;
+  display: flex;
+  height: 90px;
+  background-color: #e54c2a;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 17%;
+  padding-right: 17%;
+  z-index: 30;
+}
+.category .boc3 {
+  display: flex;
+  gap: 20px;
+}
+.category .icon {
+  width: 20px;
+  height: auto;
+}
+.category .logo {
+  filter: brightness(0) invert(0.9);
+  height: 60px;
+  width: auto;
+  margin-left: 25px;
+}
+.category .historique_about {
+  padding-left: 17%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.category .active {
+  color: rgb(211, 88, 56);
+}
+
+.category .line {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 10px auto;
+  width: 66%;
+}
+
+.category .Bakery{
+   padding-left: 17%;
+   padding-bottom: 15px;
+   padding-top: 20px;
+}
+
+.category .section-category {
+   height: 60px;
+   margin-left:17% ;
+   margin-right:17% ;
+   border: 3px solid gainsboro;
+   display: flex;
+}
+
+.category .section-category .btn-display {
+   cursor: pointer;
+}
+
+.category .section-category .box-left {
+   justify-content: start;
+   display: flex;
+   gap: 15px;
+   padding: 15px 15px;
+}
+
+.category .section-category .box-right {
+   justify-content: end;
+   display: flex;
+   gap: 15px;
+}
+
+.category .hat{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   color: white;
+   top: 0px;
+   position: sticky;
+   display: flex;
+   height: 90px;
+   background-color: #e54c2a;
+   padding-left: 17%;
+   padding-right: 17%;
+}
