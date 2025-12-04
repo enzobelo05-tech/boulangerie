@@ -1439,3 +1439,311 @@ header {
    padding-left: 17%;
    padding-right: 17%;
 }
+
+/* ================================================
+                      Article
+   ================================================ */
+
+/********** Debut Header **********/
+.article-page .nv_bar_about {
+  top: 0px;
+  position: sticky;
+  display: flex;
+  height: 90px;
+  background-color: #e54c2a;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 17%;
+  padding-right: 17%;
+  z-index: 30;
+}
+.article-page .boc3 {
+  display: flex;
+  gap: 20px;
+}
+.article-page .boc3 hr {
+  border: none;
+  border-right: 1px solid rgb(255, 255, 255, 0.6);
+}
+.article-page .icon {
+  width: 20px;
+  height: auto;
+}
+.article-page .logo {
+  filter: brightness(0) invert(0.9);
+  height: 60px;
+  width: auto;
+  margin-left: 140px;
+}
+.article-page .historique_about {
+  padding-left: 17%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.article-page .active {
+  color: rgb(211, 88, 56);
+}
+.article-page .line {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 10px auto;
+  width: 66%;
+}
+/*********** Fin Header **********/
+.article-page main {
+  padding-left: 17%;
+  padding-right: 17%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  line-height: 1.8;
+}
+.article-page .img-main {
+  height: 170px;
+  width: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.article-page .top-main {
+  display: flex;
+}
+.article-page .description-picture {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+.article-page .date-published {
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.article-page .line-date {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 8px auto;
+  width: 100%;
+}
+.article-page .paragraphe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.article-page .hat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  top: 0px;
+  position: sticky;
+  display: flex;
+  height: 50px;
+  background-color: #e54c2a;
+  padding-left: 17%;
+  padding-right: 17%;
+  margin-bottom: 40px;
+}
+/********** Debut Footer **********/
+.article-page footer {
+  background-color: #f6f7fb;
+}
+.article-page .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.article-page .subtext {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.article-page .subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 25px;
+  width: 33%;
+  background-color: white;
+}
+.article-page p.btn-sub {
+  background-color: #e54c2a;
+  border-radius: 20px;
+  padding: 13px 35px;
+  transition: all 0.3s ease;
+}
+.article-page p.btn-sub:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  font-size: 0.7rem;
+  color: #8e8e8e;
+  margin: 0;
+}
+.article-page .footer-nav {
+  padding-left: 17%;
+  padding-left: 17%;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  line-height: 1.5;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.article-page .line-foot {
+  margin: 40px auto;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  width: 66%;
+}
+.article-page .footer-nav-child {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+  gap: 8px;
+}
+.article-page .products-child:nth-child(2) {
+  margin-top: 20px;
+}
+.article-page .products-child:nth-child(n + 3):nth-child(-n + 4) {
+  display: none;
+}
+.article-page .footer-nav-child .rem12-font {
+  margin-bottom: 8px;
+}
+.article-page .footer-nav-child img {
+  height: 70px;
+  width: auto;
+}
+.article-page .products-child {
+  display: flex;
+}
+.article-page .products-child-text {
+  margin-left: 10px;
+}
+.article-page .line2 {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+}
+.article-page .credit {
+  margin-right: 17%;
+  margin-left: 17%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+}
+.article-page .credit span {
+  color: #e54c2a;
+}
+/********** Fin Footer **********/
+@media screen and (max-width: 1160px) {
+  .article-page .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .article-page .hamburger span {
+    width: 25px;
+    height: 2.4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  .article-page .nv_bar_about {
+    position: relative;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .article-page .logo {
+    margin-left: 95px;
+    height: 80px;
+    width: auto;
+  }
+  .article-page .historique_about {
+    padding-left: 3%;
+  }
+  .article-page .line {
+    width: 94%;
+  }
+  .article-page main {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 80px;
+  }
+  .article-page .img-main {
+    height: auto;
+    width: 350px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .article-page .top-main {
+    flex-direction: column;
+  }
+  .article-page .hat {
+    display: none;
+  }
+  .article-page .line-foot {
+    width: 94%;
+  }
+  .article-page footer {
+    background-color: white;
+  }
+  .article-page .create-account-btn {
+    padding: 9px 20px;
+  }
+  .article-page .article-list {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .article-page .article-child:nth-child(n + 3):nth-child(-n + 4) {
+    display: none;
+  }
+  .article-page .article-child img {
+    height: auto;
+    width: 94%;
+  }
+  .article-page .article-child {
+    padding: 10px;
+    margin-top: 20px;
+    border-left: rgb(224, 224, 224) 1px solid;
+    border-right: rgb(224, 224, 224) 1px solid;
+  }
+  .article-page .subscribe {
+    width: 66%;
+  }
+  .article-page .footer-nav {
+    padding-left: 3%;
+    padding-left: 3%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .article-page .footer-nav-child {
+    width: 100%;
+  }
+  .article-page .products-child:nth-child(n + 3):nth-child(-n + 4) {
+    display: flex;
+  }
+  .article-page .products-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .article-page .footer-nav-child img {
+    height: 100px;
+    width: auto;
+  }
+  .article-page .credit {
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+}
