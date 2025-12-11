@@ -142,6 +142,7 @@ body {
                        Accueil
 ================================================ */
 
+
 /*header--------------------------------------------------------------------------------------------------------*/
 header {
     height: 600px;
@@ -603,22 +604,23 @@ header {
     width: 310px;
 }
 
-.blog .container .article .box-tittle {
+.accueil .blog .container .article .box-tittle {
     display: flex;
     border: 1px solid #ddd;
     border-bottom: none;
     margin-bottom: 0;
 }
 
-.blog .container .article .box-tittle h6 {
+.accueil .blog .container .article .box-tittle h6 {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
-.blog .container .article .date-box {
+.accueil .blog .container .article .date-box {
     margin-top: 0;
     width: 60px;
+    height: 60px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -626,14 +628,14 @@ header {
     display: flex;
 }
 
-.blog .container .article .posted {
+.accueil .blog .container .article .posted {
     margin-top: 0;
     border: 1px solid #ddd;
     line-height: 1.6;
     padding: 0 20px;
 }
 
-.date-box .day {
+.accueil .date-box .day {
     margin-top: -30px;
     font-size: 16px;
     font-weight: bold;
@@ -641,18 +643,170 @@ header {
     line-height: 1;
 }
 
-.date-box .slash {
+.accueil .date-box .slash {
     font-size: 50px;
     margin: 1px 0;
     display: block;
     transform: rotate(22deg);
 }
 
-.date-box .month {
+.accueil .date-box .month {
     margin-top: 25px;
     font-size: 10px;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+.hat {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    display: flex;
+    height: 60px;
+    background-color: #e54c2a;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+
+
+
+
+
+/********** Debut Footer **********/
+footer {
+    margin-top: 30px;
+    background-image: url('../assets/bg-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+footer .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+footer .subtext {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+footer .subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: white;
+    border-radius: 25px;
+    width: 33%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+footer .btn-sub {
+    background-color: #e54c2a;
+    border-radius: 20px;
+    padding: 13px 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+footer p .btn-sub:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+footer .email-input {
+    all: unset;
+    flex: 1;
+    padding: 13px 20px;
+    font-size: 0.7rem;
+    background: none;
+    color: #8e8e8e;
+
+}
+
+footer .footer-nav {
+    padding-left: 17%;
+    padding-left: 17%;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    line-height: 1.5;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+footer .footer-nav-child {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+footer .products-child:nth-child(n + 3):nth-child(-n + 4) {
+    display: none;
+}
+
+footer .footer-nav-child .rem12-font {
+    margin-bottom: 8px;
+}
+
+footer .footer-nav-child img {
+    height: 70px;
+    width: auto;
+}
+
+footer .products-child {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+footer .products-child-text {
+    margin-left: 10px;
+}
+
+
+footer .line {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    width: 100%;
+}
+
+
+footer .line2 {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    width: 100%;
+}
+
+footer .credit {
+    margin-right: 17%;
+    margin-left: 17%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+}
+
+footer .credit span {
+    color: #e54c2a;
+}
+
+/********** Fin Footer **********/
 /* ================================================
                       Produits
    ================================================ */
