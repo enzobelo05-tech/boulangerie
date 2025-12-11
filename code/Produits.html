@@ -31,6 +31,7 @@
         <img src="../assets/parametres.png" class="icon" />
         <hr />
         <img src="../assets/panier.png" class="icon" />
+        <p class="rem07-font bold panierNb">1</p>
       </div>
     </div>
     <div class="historique_about">
@@ -138,12 +139,22 @@
         <div class="quantity">
           <p class="black-font rem07-font">Qty:</p>
           <div class="quantity-btn">
-            <p class="quantity-minus rem07-font">-</p>
+            <button
+              class="quantity-minus rem07-font"
+              onclick="quantityMinus(this)"
+            >
+              -
+            </button>
             <p class="quantity-number rem07-font">1</p>
-            <p class="quantity-plus rem07-font">+</p>
+            <button
+              class="quantity-plus rem07-font"
+              onclick="quantityPlus(this)"
+            >
+              +
+            </button>
           </div>
         </div>
-        <div class="add-to-cart">
+        <div class="add-to-cart" onclick="addCart()">
           <div class="btn-atc">
             <img src="../assets/bg-btn-cart-hover.png" alt="Add to cart" />
             <p class="white-font rem07-font">Add To Cart</p>
@@ -502,6 +513,31 @@
 
         // Ajoute 'selected' à l'élément cliqué
         element.classList.add("selected");
+      }
+    </script>
+    <script>
+      let number = document.querySelector(".quantity-number");
+      var nb = 1;
+
+      function quantityMinus(element) {
+        if (nb > 1) {
+          nb--;
+          number.textContent = nb;
+        }
+      }
+      function quantityPlus(element) {
+        nb++;
+        number.textContent = nb;
+      }
+    </script>
+    <script>
+      let nbPanier = 0;
+      function addCart() {
+        let bulle = document.querySelector(".panierNb");
+        bulle.style.display = "flex";
+
+        nbPanier += nb;
+        bulle.textContent = nbPanier;
       }
     </script>
   </body>
