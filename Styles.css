@@ -976,8 +976,7 @@ p.btn-sub:hover {
 /*bloc rebecha filson*/
 .accueil .rebecha-filson {
     height: 500px;
-    /* Si ton CSS est dans un dossier style/ ou css/ */
-    background-image: url('../assets/bg-testimonial_1c7bfccb-7834-409d-b6f4-0704b266fbfa.jpg.jpeg');
+    background-image: url('assets/bg-testimonial_1c7bfccb-7834-409d-b6f4-0704b266fbfa.jpg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -986,7 +985,6 @@ p.btn-sub:hover {
     justify-content: center;
     color: white;
 }
-
 .accueil .rebecha-filson .container {
     display: flex;
     flex-direction: column;
@@ -1302,7 +1300,7 @@ p.btn-sub:hover {
 /********** Footer ********************************************************$$$********/
 footer {
     margin-top: 30px;
-    background-image: url('../assets/bg-footer.jpg');
+    background-image: url('assets/bg-footer.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
