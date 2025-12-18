@@ -98,3 +98,28 @@ document.addEventListener("click", function (e) {
     document.querySelector(".overlay").classList.remove("activeBlur");
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+    const intervalTime = 10000;
+
+    if (slides.length === 0) return;
+
+    slides[currentIndex].classList.add('active');
+
+    function changeSlide() {
+        // Masquer l'image actuelle
+        slides[currentIndex].classList.remove('active');
+
+        //boucle infinie
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        //Afficher l image
+        slides[currentIndex].classList.add('active');
+    }
+
+    setInterval(changeSlide, intervalTime);
+});
+
