@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>compte-création</title>
     <link rel="stylesheet" href="../Styles.css" />
+    <script src="../script.js" defer></script>
   </head>
   <body class="compteCreation">
     <div class="nv_bar_about">
+      <div class="overlay"></div>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="btn-hamburger">
+          <span class="span"></span>
+          <span class="span"></span>
+          <span class="span"></span>
+        </div>
+        <div class="nav-hamburger">
+          <a class="bold rem07-font">HOME⏷</a>
+          <a class="bold rem07-font">CATALOG</a>
+          <a href="Produits.html" class="bold rem07-font">SHOP⏷</a>
+          <a class="bold rem07-font">BLOG</a>
+          <a href="article.html" class="bold rem07-font">PAGES⏷</a>
+        </div>
       </div>
       <div class="boc1">
-        <p class="bold rem07-font">HOME⏷</p>
-        <p class="bold rem07-font">CATALOG</p>
-        <p class="bold rem07-font">SHOP⏷</p>
-        <p class="bold rem07-font">BLOG</p>
-        <p class="bold rem07-font">PAGES⏷</p>
+        <a class="bold rem07-font">HOME⏷</a>
+        <a class="bold rem07-font">CATALOG</a>
+        <a href="Produits.html" class="bold rem07-font">SHOP⏷</a>
+        <a class="bold rem07-font">BLOG</a>
+        <a href="article.html" class="bold rem07-font">PAGES⏷</a>
       </div>
       <img src="../assets/logo.png" class="logo" />
       <div class="boc2">
@@ -26,11 +37,21 @@
         <p class="bold rem07-font">CONTACT</p>
       </div>
       <div class="boc3">
-        <img src="../assets/loupe.png" class="icon" />
+        <a href="#">
+          <img src="../assets/loupe.png" class="icon" />
+        </a>
         <hr />
-        <img src="../assets/parametres.png" class="icon" />
+        <a href="compte-creation.html">
+          <img src="../assets/parametres.png" class="icon" />
+        </a>
         <hr />
-        <img src="../assets/panier.png" class="icon" />
+        <a href="panier.html">
+          <img src="../assets/panier.png" class="icon" href="panier.html" />
+        </a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <img src="/assets/loupe.png" alt="Search" />
       </div>
     </div>
     <div class="historique_about">
@@ -85,7 +106,9 @@
           />
           <p class="rem07-font">Create</p>
         </div>
-        <a href="" class="rem07-font black-font">or Return to Store</a>
+        <a href="" class="rem07-font black-font return-txt"
+          >or Return to Store</a
+        >
       </div>
     </main>
     <footer>
@@ -130,7 +153,7 @@
               />
               <div class="products-child-text">
                 <p class="rem07-font bold">Zim-Ing La Joynix</p>
-                <p class="rem07-font price">$80.00</p>
+                <p class="rem07-font red-font price">$80.00</p>
               </div>
             </div>
             <div class="products-child">
@@ -140,7 +163,7 @@
               />
               <div class="products-child-text">
                 <p class="rem07-font bold">Ovejob Treeit Goldfresh</p>
-                <p class="rem07-font price">$80.00</p>
+                <p class="rem07-font red-font price">$80.00</p>
               </div>
             </div>
             <div class="products-child">
@@ -150,7 +173,7 @@
               />
               <div class="products-child-text">
                 <p class="rem07-font bold">Redphase Unitrax</p>
-                <p class="rem07-font price">$80.00</p>
+                <p class="rem07-font red-font price">$80.00</p>
               </div>
             </div>
             <div class="products-child">
@@ -160,7 +183,7 @@
               />
               <div class="products-child-text">
                 <p class="rem07-font bold">Zummatough Tontamtought</p>
-                <p class="rem07-font price">$80.00</p>
+                <p class="rem07-font red-font price">$80.00</p>
               </div>
             </div>
           </div>
