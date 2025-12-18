@@ -98,3 +98,4 @@ document.addEventListener("click", function (e) {
     document.querySelector(".overlay").classList.remove("activeBlur");
   }
 });
+Delete script.js
