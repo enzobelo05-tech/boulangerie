@@ -530,6 +530,7 @@ p.btn-sub:hover {
     }
 }
 
+
 /* ================================================
                        Accueil
 ================================================ */
@@ -541,32 +542,6 @@ p.btn-sub:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-.accueil .carousel {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    display: grid;
-    grid-template-areas: 'stack';
-}
-
-.accueil .slide {
-    grid-area: stack;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-}
-
-.accueil .slide.active {
-    opacity: 1;
 }
 
 .accueil header .container {
@@ -583,6 +558,49 @@ p.btn-sub:hover {
 .accueil header .container .logo-header {
     width: 170px;
     margin-bottom: 15px;
+}
+
+/* ========== CARROUSEL ========== */
+.accueil header .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.accueil header .carousel .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.accueil header .carousel .slide:first-child {
+    opacity: 1;
+    z-index: 1;
+}
+
+.accueil header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.accueil header .container {
+    position: relative;
+    z-index: 2;
 }
 
 .accueil .container h1 {
