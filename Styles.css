@@ -1123,8 +1123,8 @@ p.btn-sub:hover {
 
 /*bloc rebecha filson*/
 .accueil .rebecha-filson {
-    height: 500px;
-    background-image: url('assets/bg-testimonial_1c7bfccb-7834-409d-b6f4-0704b266fbfa.jpg.jpeg');
+    height: 400px;
+    background-image: url('assets/bg-temoignages.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
